@@ -3,11 +3,11 @@
 CACHE_DIR=${XDG_CACHE_HOME:-"$HOME/.cache"}
 CACHE=$CACHE_DIR/lutrish-games.json
 
-cols=$(tput lines)
-lines=$(tput cols)
+cols=$(tput cols)
+lines=$(tput lines)
 
-declare -i width && width=lines-20
-declare -i height && height=cols-10
+declare -i width && width=cols-20
+declare -i height && height=lines-10
 
 wc -c $CACHE | grep $(lutris --list-games --installed --json | jq '.[] | {name: .slug, runner: .runner}' | wc -c) || lutris --list-games --installed --json | jq '.[] | {name: .slug, runner: .runner}' > $CACHE 
 
