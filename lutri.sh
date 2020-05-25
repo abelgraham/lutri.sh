@@ -9,7 +9,11 @@ lines=$(tput lines)
 declare -i width && width=cols-20
 declare -i height && height=lines-10
 
-wc -c $CACHE | grep $(lutris --list-games --installed --json | jq '.[] | {name: .slug, runner: .runner}' | wc -c) || lutris --list-games --installed --json | jq '.[] | {name: .slug, runner: .runner}' > $CACHE 
+wc -c $CACHE |\
+ grep $(lutris --list-games --installed --json |\
+ jq '.[] | {name: .slug, runner: .runner}' | wc -c) ||\
+ lutris --list-games --installed --json |\
+ jq '.[] | {name: .slug, runner: .runner}' > $CACHE 
 
 dialog_func = ${dialog_func=dialog}
 
