@@ -9,12 +9,15 @@
 
 ## Requirements
 
-* Standard utilities
-awk, cat, grep, kill, ls, mkdir, nohup, sleep, touch, tr
+* Standard utilities:
 
-* [**lutris**](https://lutris.net/)
-* [**dialog**](https://invisible-island.net/dialog/)
-* [**jq**](https://stedolan.github.io/jq/)
+** awk, cat, grep, kill, ls, mkdir, nohup, sleep, touch, tr
+
+* Dependencies:
+
+** [**lutris**](https://lutris.net/)
+** [**dialog**](https://invisible-island.net/dialog/)
+** [**jq**](https://stedolan.github.io/jq/)
 
 ## Screenshots
 
