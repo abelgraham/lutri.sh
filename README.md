@@ -11,13 +11,13 @@
 
 * Standard utilities:
 
-** awk, cat, grep, kill, ls, mkdir, nohup, sleep, touch, tr
+	* awk, cat, grep, kill, ls, mkdir, nohup, sleep, touch, tr
 
 * Dependencies:
 
-** [**lutris**](https://lutris.net/)
-** [**dialog**](https://invisible-island.net/dialog/)
-** [**jq**](https://stedolan.github.io/jq/)
+	* [**dialog**](https://invisible-island.net/dialog/)
+	* [**jq**](https://stedolan.github.io/jq/)
+	* [**lutris**](https://lutris.net/)
 
 ## Screenshots
 
